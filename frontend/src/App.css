@@ -1,0 +1,63 @@
+.App {
+  padding-top: 8px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 50px 90%;
+}
+
+#search {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 50px;
+}
+
+#searchbar {
+  width: 80%;
+}
+
+#content {
+  grid-row-start: 2;
+  min-height: calc(100vh - 58px);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#content > section {
+  border-right: 1px solid #000;
+}
+
+#content li:hover {
+  cursor: pointer;
+}
+
+#artists {
+}
+
+#albums {
+}
+
+#playlists {
+}
+
+#tracks {
+  border: none;
+}
+
+#artist_data {
+  position: absolute;
+  background: #fff;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#artist_data > #close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+#artist_data > #close:hover {
+  cursor: pointer;
+}
